@@ -1,6 +1,7 @@
 @extends('admin.template.main')
 @include('admin.template.navbar')
 @include('admin.template.header')
+@include('admin.template.footer')
 
 
 

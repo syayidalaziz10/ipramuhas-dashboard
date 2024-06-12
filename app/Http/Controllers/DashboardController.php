@@ -12,7 +12,7 @@ class DashboardController extends BaseController
    public function index(Request $request)
    {
       $data = [
-         'page'  => "admin",
+         'page'  => "Dashboard",
       ];
 
 

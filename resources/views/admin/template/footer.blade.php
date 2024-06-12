@@ -1,13 +1,10 @@
 @section('footer')
    <div class="container footer--flex">
-      <div class="footer-start">
-      <p>2021 © Elegant Dashboard - <a href="elegant-dashboard.com" target="_blank"
-            rel="noopener noreferrer">elegant-dashboard.com</a></p>
-      </div>
+      <div class="footer-start"><p>2024 © SIMA - Sistem Manajemen Anggota Ikatan Pranata Hukum Indonesia</div>
       <ul class="footer-end">
-         <li><a href="##">About</a></li>
-         <li><a href="##">Support</a></li>
-         <li><a href="##">Puchase</a></li>
+         <li><a href="#">Tentang</a></li>
+         <li><a href="#">Kontak</a></li>
+         <li><a href="#">Persyaratan & Ketentuan</a></li>
       </ul>
    </div>
 @endsection

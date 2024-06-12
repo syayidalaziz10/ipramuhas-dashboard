@@ -19,7 +19,7 @@
             <i data-feather="chevron-down" aria-hidden="true"></i>
           </button>
           <ul class="lang-menu dropdown">
-            <li><a href="##">Indonesia</a></li>
+            <li><a href="##">Indonesian</a></li>
             <li><a href="##">English</a></li>
           </ul>
         </div>
@@ -82,18 +82,9 @@
             </span>
           </button>
           <ul class="users-item-dropdown nav-user-dropdown dropdown">
-            <li><a href="##">
-                <i data-feather="user" aria-hidden="true"></i>
-                <span>Profile</span>
-              </a></li>
-            <li><a href="##">
-                <i data-feather="settings" aria-hidden="true"></i>
-                <span>Account settings</span>
-              </a></li>
-            <li><a class="danger" href="##">
-                <i data-feather="log-out" aria-hidden="true"></i>
-                <span>Log out</span>
-              </a></li>
+            <li><a href="#"><span>Profile</span></a></li>
+            <li><a href="#"><i data-feather="settings" aria-hidden="true"></i><span>Account settings</span></a></li>
+            <li><a class="danger" href="{{ route('logout') }}"><i data-feather="log-out" aria-hidden="true"></i><span>Log out</span></a></li>
           </ul>
         </div>
       </div>

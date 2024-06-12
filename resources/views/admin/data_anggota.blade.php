@@ -1,6 +1,7 @@
 @extends('admin.template.main')
 @include('admin.template.navbar')
 @include('admin.template.header')
+@include('admin.template.footer')
 
 
 
@@ -30,7 +31,6 @@
                      <th>TMT PH</th>
                      <th>Instansi</th>
                      <th>Satuan Kerja</th>
-                     <th>Action</th>
                      </tr>
                   </thead>
                   <tbody>
@@ -48,19 +48,6 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>
-                           <span class="p-relative">
-                              <button class="dropdown-btn transparent-btn" type="button" title="More info">
-                              <div class="sr-only">More info</div>
-                              <i data-feather="more-horizontal" aria-hidden="true"></i>
-                              </button>
-                              <ul class="users-item-dropdown dropdown">
-                              <li><a href="##">Edit</a></li>
-                              <li><a href="##">Quick edit</a></li>
-                              <li><a href="##">Trash</a></li>
-                              </ul>
-                           </span>
-                        </td>
                      </tr>
                   </tbody>
                </table>

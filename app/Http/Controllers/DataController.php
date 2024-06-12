@@ -12,10 +12,10 @@ class DataController extends BaseController
    public function index(Request $request)
    {
       $data = [
-         'page'  => "data",
+         'page'  => "Data Anggota",
       ];
 
 
-      return view('/admin/data', $data);
+      return view('/admin/data_anggota', $data);
    }
 }

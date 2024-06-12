@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ikatan Pranata Humas Indonesia | Dashboard</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./img/svg/logo.svg" type="image/x-icon">
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="./css/style.min.css">
+  <title>{{ $page }} - Sistem Manajemen Anggota Ikatan Pranata Hukum Indonesia</title>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <link rel="stylesheet" href="{{ asset('css/style.min.css') }}">
+  
+</head>
 </head>
 
 <body>
@@ -30,10 +30,12 @@
       </footer>
     </div>
   </div>
-
-<script src="./plugins/chart.min.js"></script>
-<script src="plugins/feather.min.js"></script>
-<script src="js/script.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="{{ asset('plugins/chart.min.js') }}"></script>
+  <script src="{{ asset('plugins/feather.min.js') }}"></script>
+  <script src="{{ asset('js/script.js') }}"></script>
+  <!-- Scripts -->
 
 </body>
 
