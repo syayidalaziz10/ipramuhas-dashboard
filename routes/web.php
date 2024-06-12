@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DataController;
 use App\Http\Controllers\LoginController;
@@ -18,13 +19,8 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 |
 */
 
-
-
-
-
-Route::middleware(['guest'])->group(function () {
-   Route::get('/login', [LoginController::class, 'index'])->name('login');
-   Route::post('/login', [LoginController::class, 'authenticate'])->name('auth');
+Route::get('/', function () {
+   dd(auth()->user());
 });
 
 Route::middleware(['auth', 'Admin'])->group(function () {
@@ -33,5 +29,4 @@ Route::middleware(['auth', 'Admin'])->group(function () {
    Route::get('/users', [UsersController::class, 'index'])->name('users');
 });
 
-
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+Auth::routes();
