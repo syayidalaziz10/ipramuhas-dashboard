@@ -5,7 +5,7 @@
             <div class="main-nav-start">
                 <div class="search-wrapper">
                     <i data-feather="search" aria-hidden="true"></i>
-                    <input type="text" placeholder="Masukan kata kunci ..." required>
+                    <input type="text"  id="search" aria-describedby="emailHelp" placeholder="Masukan kata kunci ..." required>
                 </div>
             </div>
             <div class="main-nav-end">

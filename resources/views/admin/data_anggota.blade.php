@@ -8,44 +8,38 @@
 @section('content')
     <div class="container">
         <h2 class="main-title">Data Anggota</h2>
-        <div class="mb-3">
-            <label for="search" class="form-label">search</label>
-            <input type="email" class="form-control" id="search" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
         <div class="row">
             <div class="col-12">
                 <div class="users-table table-wrapper">
                     <table class="posts-table" id="table">
                         <thead>
                             <tr class="users-table-info">
-                                <th>
-                                    <p class="users-table__checkbox ms-20">
-                                        Nama
+                                <th><p class="users-table__checkbox ms-20">
+                                        NIP
                                     </p>
                                 </th>
-                                <th>NIP</th>
-                                <th>Tempat Lahir</th>
-                                <th>Tanggal Lahir</th>
+                                <th>Nama</th>
                                 <th>Email</th>
-                                <th>Pendidikan Tertinggi</th>
+                                <th>Tempat lahir</th>
+                                <th>Tanggal lahir</th>
+                                <th>Pendidikan</th>
                                 <th>Jabatan</th>
                                 <th>Pangkat/Gol</th>
-                                <th>TMT Pangkat</th>
+                                <th>TMT pangkat</th>
                                 <th>Pranata humas</th>
                                 <th>TMT PH</th>
                                 <th>Instansi</th>
-                                <th>Satuan Kerja</th>
+                                <th>Satuan kerja</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($users as $user)
                                 <tr>
-                                    <td>{{ $user->bio_data->nama_lengkap }}</td>
                                     <td>{{ $user->bio_data->NIP }}</td>
+                                    <td>{{ $user->bio_data->nama_lengkap }}</td>
+                                    <td>{{ $user->email }}</td>
                                     <td>{{ $user->bio_data->tempat_lahir }}</td>
                                     <td>{{ $user->bio_data->tanggal_lahir }}</td>
-                                    <td>{{ $user->email }}</td>
                                     <td>{{ $user->bio_data->pendidikan_tertinggi }}</td>
                                     <td>{{ $user->bio_data->jabatan }}</td>
                                     <td>{{ $user->bio_data['pangkat/gol'] }}</td>

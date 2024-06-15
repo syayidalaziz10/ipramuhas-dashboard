@@ -19,15 +19,17 @@ return new class extends Migration
             $table->string("nama_lengkap");
             $table->string("NIP");
             $table->string("tempat_lahir");
-            $table->dateTime("tanggal_lahir");
+            $table->date("tanggal_lahir");
             $table->string("pendidikan_tertinggi");
             $table->string("jabatan");
             $table->string("pangkat/gol");
-            $table->string("tmt_pangkat");
+            $table->date("tmt_pangkat");
             $table->string("penata_humas");
-            $table->string("tmt_ph");
+            $table->date("tmt_ph");
             $table->string("instansi");
             $table->string("satuan_kerja");
+            $table->enum('keahlian', ['MC', 'Komunikasi Public', 'Konten Kreator']);
+            $table->enum('status', ['Aktif', 'Pending']);
             $table->timestamps();
         });
 
