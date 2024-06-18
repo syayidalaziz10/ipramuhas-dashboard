@@ -37,32 +37,6 @@
                         <li>
                             <a href="##">
                                 <div class="notification-dropdown-icon info">
-                                    <i data-feather="check"></i>
-                                </div>
-                                <div class="notification-dropdown-text">
-                                    <span class="notification-dropdown__title">System just updated</span>
-                                    <span class="notification-dropdown__subtitle">The system has been successfully upgraded.
-                                        Read more
-                                        here.</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="##">
-                                <div class="notification-dropdown-icon danger">
-                                    <i data-feather="info" aria-hidden="true"></i>
-                                </div>
-                                <div class="notification-dropdown-text">
-                                    <span class="notification-dropdown__title">The cache is full!</span>
-                                    <span class="notification-dropdown__subtitle">Unnecessary caches take up a lot of memory
-                                        space and
-                                        interfere ...</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="##">
-                                <div class="notification-dropdown-icon info">
                                     <i data-feather="check" aria-hidden="true"></i>
                                 </div>
                                 <div class="notification-dropdown-text">
