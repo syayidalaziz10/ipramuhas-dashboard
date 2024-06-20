@@ -22,7 +22,7 @@ return new class extends Migration
             $table->date("tanggal_lahir");
             $table->enum('pendidikan_tertinggi', ['SMA', 'D3', 'D4/S1', 'S2', 'S3']);
             $table->enum('jabatan', ['Pranata Humas Ahli Madya', 'Prana Humas Ahli Muda', 'Pranata Humas Ahli Pertama', 'Pranata Humas Penyelia', 'Pranata Humas Pelaksana Lanjut', 'Pranata Humas Pelaksana', 'Pranata Humas Pelaksana Pemula'])->default('Pranata Humas Ahli Madya');
-            $table->enum('pangkat/gol', ['Pembina Utama/IV.e', 'Pembina Utama Madya/IV.d', 'Pembina Utama Muda/IV.c', 'Pembina Tingkat/IV.b', 'Pembina/IV.a', 'Penata Tingkat/III.d', 'Penata/III.c', 'Penata Muda Tingkat I/III.b', 'Penata Muda/III.a', 'Pengatur Tingkat I/II.d', 'Pengatur/II.c', 'Pengatur Muda Tingkat I/II.b', 'Pengatur Muda /II.a', 'Juru Tingkat I/I.d', 'Juru/I.c', 'Juru Muda Tingkat I/I.b', 'Juru Muda I/I.a']);
+            $table->enum('pangkat', ['Pembina Utama/IV.e', 'Pembina Utama Madya/IV.d', 'Pembina Utama Muda/IV.c', 'Pembina Tingkat/IV.b', 'Pembina/IV.a', 'Penata Tingkat/III.d', 'Penata/III.c', 'Penata Muda Tingkat I/III.b', 'Penata Muda/III.a', 'Pengatur Tingkat I/II.d', 'Pengatur/II.c', 'Pengatur Muda Tingkat I/II.b', 'Pengatur Muda /II.a', 'Juru Tingkat I/I.d', 'Juru/I.c', 'Juru Muda Tingkat I/I.b', 'Juru Muda I/I.a']);
             $table->date("tmt_pangkat");
             $table->string("penata_humas");
             $table->date("tmt_ph");
