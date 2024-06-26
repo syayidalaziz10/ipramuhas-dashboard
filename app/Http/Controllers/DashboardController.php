@@ -19,6 +19,8 @@ class DashboardController extends BaseController
 
       $data = [
          'page'  => "Dashboard",
+         'labels' => ['Label 1', 'Label 2', 'Label 3'],
+         'values' => [30, 50, 20],
          'sum_anggota' => BioDataUser::count(),
          'count_daftar_bulan_ini' => BioDataUser::whereBetween('created_at', [$startOfMonth, $endOfMonth])->count(),
          'count_pending' => BioDataUser::where('status', 'Pending')->count(),
