@@ -8,6 +8,10 @@
 @section('content')
    <div class="container">
       <h2 class="main-title">Dashboard</h2>
+      {{-- <div class="row stat-cards">
+         <div class="col-lg-12 white-block">
+         </div>
+      </div> --}}
       <div class="row stat-cards">
          <div class="col-md-6 col-xl-3">
             <article class="stat-cards-item">
@@ -57,17 +61,17 @@
       </div>
       <div class="row">
          <div class="col-lg-3">
-            <div class="chart">
+            <div class="chart white-block">
                <canvas id="keahlianChart"></canvas>
             </div>
          </div>
          <div class="col-lg-3">
-            <div class="chart">
+            <div class="chart white-block">
                <canvas id="pangkatChart"></canvas>
             </div>
          </div>
          <div class="col-lg-3">
-            <div class="chart">
+            <div class="chart white-block">
                <canvas id="pendidikanChart"></canvas>
             </div>
          </div>
@@ -89,42 +93,6 @@
                   @endforeach
                </ul>
             </article>
-         </div>
-         <div class="col-lg-9">
-            <div class="users-table table-wrapper">
-               <table class="posts-table">
-                  <thead>
-                     <tr class="users-table-info">
-                        <th><p class="users-table__checkbox ms-20">Nama lengkap</p>
-                        </th>
-                        <th>Tanggal pendaftaraan</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     @foreach($anggota_pending as $anggota)
-                        <tr>
-                           <td>{{ $anggota->nama_lengkap }}</td>
-                           <td>{{ $anggota->created_at->format('d-m-Y') }}</td>
-                           <td><span class="badge-pending">Pending</span></td>
-                           <td>
-                              <span class="p-relative">
-                                    <button class="dropdown-btn transparent-btn" type="button" title="More info">
-                                       <div class="sr-only">More info</div>
-                                       <i data-feather="more-horizontal" aria-hidden="true"></i>
-                                    </button>
-                                    <ul class="users-item-dropdown dropdown">
-                                       <li><a href="#">Quick edit</a></li>
-                                       <li><a href="#">Trash</a></li>
-                                    </ul>
-                              </span>
-                           </td>
-                        </tr>
-                     @endforeach                     
-                  </tbody>
-               </table>
-            </div>
          </div>
       </div>
    </div>
