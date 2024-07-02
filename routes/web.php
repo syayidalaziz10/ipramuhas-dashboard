@@ -21,3 +21,6 @@ Route::get('/', function () {
 Route::get('/form', function (){
     return view('form/index');
 });
+Route::get('/coba', function (){
+    return view('form/coba');
+});
